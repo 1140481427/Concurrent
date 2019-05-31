@@ -25,7 +25,7 @@ public class AtomicExample2 {
 
     public static void main(String[] args) throws Exception {
         ExecutorService executorService = Executors.newCachedThreadPool();
-        //定义信号量 同时可执行200
+        //定义信号量 同时可执行200 1
         final Semaphore semaphore = new Semaphore(threadTotal);
         final CountDownLatch countDownLatch = new CountDownLatch(clientTotal);//计数器闭锁
         for (int i=0; i<clientTotal; i++) {
